@@ -1,0 +1,10 @@
+#include<stdio.h>
+main()
+{
+	int i;
+  char a[30];
+	scanf("%[^/n]s",a);
+	for(i=1;a[i]!='\0';i=i+2)
+		a[i]=a[i]-32;
+	printf("%s",a);
+}

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	char a[10];
+	int i,j,uppercount=0,lowercount=0,digitcount=0,n=0;
+	scanf("%s",a);
+	for(i=0;a[i]='\0';i++)
+	n++;
+	for(i=0;i<n;i++)
+	{
+		if ( isupper(a[i]))
+		uppercount++;
+		else if( islower(a[i]))
+		lowercount++;
+		else if( isdigit(a[i]))
+		digitcount++;	
+	}
+	printf("upper is %d",uppercount);
+	printf("lower is %d",lower count);
+	printf("digit is %d",digit count);
+	return 0;
+	}
